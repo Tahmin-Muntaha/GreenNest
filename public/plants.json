@@ -1,0 +1,74 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy plant that purifies indoor air and thrives in low light.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzedHApj9BMhO81POpvVegMe1UMuhvvfvSLVvTDgYeCcKaf5Tl4fMoq3ROr4vlKN5xk3c&usqp=CAU",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Aloe Vera",
+    "category": "Medicinal",
+    "price": 12,
+    "rating": 4.6,
+    "availableStock": 15,
+    "careLevel": "Easy",
+    "description": "A soothing succulent known for its healing gel and low maintenance.",
+    "image": "https://media.post.rvohealth.io/wp-content/uploads/sites/3/2025/04/aloe-vera-GettyImages-1473547826-Header-1024x575.jpg",
+    "providerName": "GreenLeaf Co."
+  },
+  {
+    "plantId": 3,
+    "plantName": "Peace Lily",
+    "category": "Flowering",
+    "price": 22,
+    "rating": 4.7,
+    "availableStock": 8,
+    "careLevel": "Medium",
+    "description": "A beautiful flowering plant that filters toxins from indoor air.",
+    "image": "https://planthouse.co.nz/cdn/shop/files/Picasso-Peace-Lily-NZ-Flower_860x.jpg?v=1750653978",
+    "providerName": "NatureNest Garden"
+  },
+  {
+    "plantId": 4,
+    "plantName": "Fiddle Leaf Fig",
+    "category": "Decorative",
+    "price": 35,
+    "rating": 4.5,
+    "availableStock": 5,
+    "careLevel": "Hard",
+    "description": "A stylish indoor plant with large glossy leaves, perfect for modern interiors.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScFdLgTlnSqTwvLg4H_fP5dP4ncjs-3wr1cw&s",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 5,
+    "plantName": "Spider Plant",
+    "category": "Air Purifier",
+    "price": 16,
+    "rating": 4.9,
+    "availableStock": 20,
+    "careLevel": "Easy",
+    "description": "A fast-growing plant known for removing indoor pollutants effectively.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUXzClSRNvjB5tvqe-EQWpooOxnavl7d6v_A&s",
+    "providerName": "Leaf & Love Nursery"
+  },
+  {
+    "plantId": 6,
+    "plantName": "Boston Fern",
+    "category": "Hanging Plant",
+    "price": 25,
+    "rating": 4.4,
+    "availableStock": 7,
+    "careLevel": "Medium",
+    "description": "A lush fern ideal for hanging baskets, prefers humidity and indirect light.",
+    "image": "https://ome.design/cdn/shop/files/Nephrolepisexaltatas_1080x.jpg?v=1714907115",
+    "providerName": "Evergreen House"
+  }
+]

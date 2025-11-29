@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import Root from "../Pages/Root";
+import Home from "../Pages/Home";
 
 export const router=createBrowserRouter(
     [
@@ -8,8 +9,10 @@ export const router=createBrowserRouter(
             Component:Root,
             children:[
                 {
-                    
-                }
+                    index:true,
+                    loader:()=>fetch('/plants.json'),
+                    Component:Home
+                },
             ]
         }
     ]
