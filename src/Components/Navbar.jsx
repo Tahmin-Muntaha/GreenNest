@@ -12,7 +12,7 @@ const Navbar = () => {
                 <NavLink to='/plants' className={({isActive})=>isActive?"text-white":""}>Plants</NavLink>
                 <NavLink to='/profile' className={({isActive})=>isActive?"text-white":""}>My Profile</NavLink>
             </div>
-            <NavLink to='/signin' className='py-3  px-6 border rounded-2xl hover:bg-black hover:text-white'>Log In </NavLink>
+            <NavLink to='/signup' className={({isActive})=>`py-3  px-6 border rounded-2xl hover:bg-black hover:text-white ${isActive?"bg-black text-white":""}`}>Sign Up </NavLink>
             <div></div>
         </div>
     );

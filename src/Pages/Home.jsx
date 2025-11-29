@@ -63,7 +63,7 @@ const Home = () => {
             </div>
 
             <div className='mb-10'>
-                <p className='text-5xl font-semibold text-center'>Meet Our Experts:</p>
+                <p className='text-5xl font-semibold text-center'>Meet Our Green Experts:</p>
                 <div className='grid grid-cols-3 p-4 md:pl-12 shadow-xl gap-2 md:gap-8'>
                     <div>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZex-8uTV7Kzpxg7cLFXP6blh9pe5GzijiRA&s" className='h-[200px]'></img>
