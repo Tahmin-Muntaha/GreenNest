@@ -6,8 +6,7 @@ import { useNavigate } from 'react-router';
 const Plant = ({p}) => {
     const {user}=useContext(AuthContext)
    const {plantId}=p
-    console.log(p)
-    console.log(user)
+    
     const navigate=useNavigate()
     return (
         <div className='p-8 shadow-2xl rounded'>

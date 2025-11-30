@@ -25,7 +25,6 @@ const Profile = () => {
         })
 
     }
-    console.log(user)
     if(loading) return null
     if(!user) return <Navigate to='/'></Navigate>
     return (

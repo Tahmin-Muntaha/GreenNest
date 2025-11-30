@@ -20,7 +20,6 @@ const PlantDetails = () => {
     e.target.reset()
     toast.success('Booked..')
    }
-    console.log(p)
     return (
         
            

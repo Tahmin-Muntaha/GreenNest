@@ -27,6 +27,7 @@ const SignUp = () => {
         createUserWithEmailAndPassword(auth,email,pass)
         .then((res)=>{
             return updateProfile(res.user,{
+                ...user,
                 displayName:name,
                 photoURL:photo
 
