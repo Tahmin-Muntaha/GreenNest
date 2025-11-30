@@ -63,6 +63,16 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <div className='mb-16'>
+                <p className='text-5xl font-semibold text-center '>This Week's Highlight</p>
+                <div className=''>
+                    <div className='p-12 text-teal-800'>
+                        <img src='https://cdn11.bigcommerce.com/s-h658uhfy9j/product_images/uploaded_images/aloe-vera-blog.jpg' className='h-[500px] w-full'></img>
+                        <p className='px-16'>Aloe vera is a succulent plant known for its medicinal, cosmetic, and health benefits. Native to North Africa, it has thick, fleshy leaves filled with a clear gel rich in vitamins, minerals, enzymes, and antioxidants. The plant is widely used for its soothing and healing properties, particularly for skin care. Aloe vera gel can treat burns, cuts, insect bites, and sunburns by promoting faster healing and reducing inflammation. It is also a common ingredient in skincare products, helping moisturize, reduce acne, and slow signs of aging. Internally, aloe vera juice is consumed to aid digestion, boost immunity, and support detoxification, though moderation is important. The plant is easy to grow, requiring minimal water and thriving in sunny, well-drained environments, making it popular for home gardens and indoor pots. Aloe vera also contributes to air purification, absorbing toxins and improving indoor air quality. Its long-standing use in traditional medicine, combined with modern scientific validation, makes it one of the most versatile plants for health and wellness. Beyond its therapeutic benefits, aloe vera’s low maintenance and adaptability have made it a staple in households worldwide, valued not only for its functional properties but also for its aesthetic appeal as a green, resilient plant.
+</p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
