@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Plant = ({p}) => {
-    console.log(p)
+    
     return (
         <div className='p-8 shadow-2xl rounded'>
             <div>

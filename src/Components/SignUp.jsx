@@ -1,20 +1,24 @@
-import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
+import { createUserWithEmailAndPassword, signInWithPopup, updateProfile } from 'firebase/auth';
 import { Eye, EyeClosed } from 'lucide-react';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { auth } from '../firebase.config';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router';
 import { GoogleAuthProvider } from 'firebase/auth';
+import { AuthContext } from '../Authentication/AuthContext';
 
 const SignUp = () => {
+    const {user,setUser}=useContext(AuthContext)
     const navigate=useNavigate()
     const [see,setSee]=useState(false)
-    const provider=new GoogleAuthProvider
+    const provider=new GoogleAuthProvider()
     
     const handleSignUp=(e)=>{
         e.preventDefault()
+        const name=e.target.name.value
         const email=e.target.email.value
         const pass=e.target.pass.value
+        const photo=e.target.photo.value
         const reg=/^(?=.*[A-Z])(?=.*[a-z]).{6,}$/
         if(!reg.test(pass)){
             toast.error("Password must contain at least one uppercase letter, one lowercase letter, and be at least 6 characters long.")
@@ -22,12 +26,25 @@ const SignUp = () => {
         }
         createUserWithEmailAndPassword(auth,email,pass)
         .then((res)=>{
-            navigate('/')
+            return updateProfile(res.user,{
+                displayName:name,
+                photoURL:photo
+
+            })
+             .then(()=>{
+             
+            setUser(auth.currentUser)
             toast.success('Sign Up Successful')
-        })
+            navigate('/')
+            })
         .catch((e)=>{
             toast.error(e.message)
-            console.log(e)
+        })
+        
+        
+
+           
+            
         })
         
     }
@@ -35,12 +52,22 @@ const SignUp = () => {
         e.preventDefault()
         signInWithPopup(auth,provider)
         .then ((res)=>{
-            navigate('/')
+           
+            return updateProfile(res.user,{
+                displayName:name,
+                photoURL:photo
+
+            })
+             .then(()=>{
+             
+            setUser(auth.currentUser)
             toast.success('Sign Up Successful')
-        })
+            navigate('/')
+            })
         .catch((e)=>{
             toast.error(e.message)
         })
+    })
     }
     return (
         <form className='bg-green-800 text-white w-[75%] md:w-[30%] max-w-[1260px] mx-auto p-8 my-16 rounded-2xl shadow-green-800 shadow-2xl' onSubmit={handleSignUp}>
@@ -71,7 +98,7 @@ const SignUp = () => {
                     <div className=''> <button className='py-2 px-6 border rounded-2xl hover:bg-black hover:text-white' onClick={signInWithGoogle } type='button'>Sign Up With Google</button></div>
                     </div>
                     <div className='m-2'>
-                        <small>Already have an account?</small><span className='underline' onClick={()=>navigate('/signin')}> Sign In</span>
+                        <small>Already have an account?</small><span className='underline' onClick={()=>navigate('/signin')}> Log In</span>
                     </div>
                 </form>
     );

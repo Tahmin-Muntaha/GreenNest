@@ -2,7 +2,7 @@ import React from 'react';
 import Plant from './Plant';
 
 const Plants = ({plants}) => {
-    console.log(plants)
+    
     return (
         <div className=' my-10'>
             <h1 className='text-6xl font-bold text-center'>🌲Plants🌲</h1>

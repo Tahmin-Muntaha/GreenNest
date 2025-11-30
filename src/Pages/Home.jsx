@@ -3,31 +3,12 @@ import Swipper from '../Components/swipper'
 import Plants from '../Components/Plants';
 import { useLoaderData } from 'react-router';
 
-{
- 
-  const GreenExperts= [
-    {
-      "name": "",
-      "specialization": "",
-      "image": "https://example.com/images/ayesha.jpg"
-    },
-    {
-      "name": " ",
-      "specialization": "",
-      "image": "https://example.com/images/rana.jpg"
-    },
-    {
-      "name": "",
-      "specialization": "",
-      "image": "https://example.com/images/mina.jpg"
-    }
-  ]
-}
+
 
 const Home = () => {
 
     const plants=useLoaderData()
-    console.log(plants)
+    
     return (
         
         <div>
