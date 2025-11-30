@@ -3,6 +3,8 @@ import Root from "../Pages/Root";
 import Home from "../Pages/Home";
 import SignUp from "../Components/SignUp";
 import SignIn from "../Components/SignIn";
+import PlantDetails from "../Components/PlantDetails";
+import Profile from "../Pages/Profile";
 
 export const router=createBrowserRouter(
     [
@@ -20,9 +22,18 @@ export const router=createBrowserRouter(
                     Component:SignUp
                 },
                 {
-                    path:'signin',
+                    path:'/signin',
                     Component:SignIn
 
+                },
+                {
+                    path:'/details/:plantId',
+                    loader:()=>fetch('/plants.json'),
+                    Component:PlantDetails
+                },
+                {
+                    path:'/profile',
+                    Component:Profile
                 }
             ]
         }

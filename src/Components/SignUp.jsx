@@ -53,13 +53,7 @@ const SignUp = () => {
         signInWithPopup(auth,provider)
         .then ((res)=>{
            
-            return updateProfile(res.user,{
-                displayName:name,
-                photoURL:photo
-
-            })
-             .then(()=>{
-             
+            
             setUser(auth.currentUser)
             toast.success('Sign Up Successful')
             navigate('/')
@@ -67,7 +61,7 @@ const SignUp = () => {
         .catch((e)=>{
             toast.error(e.message)
         })
-    })
+    
     }
     return (
         <form className='bg-green-800 text-white w-[75%] md:w-[30%] max-w-[1260px] mx-auto p-8 my-16 rounded-2xl shadow-green-800 shadow-2xl' onSubmit={handleSignUp}>

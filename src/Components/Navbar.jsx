@@ -1,16 +1,18 @@
 import React, { useContext } from 'react';
-import { NavLink } from 'react-router';
 import { AuthContext } from '../Authentication/AuthContext';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase.config';
 import { toast } from 'react-toastify';
+import { NavLink } from 'react-router';
 
 const Navbar = () => {
     const {user,setUser}=useContext(AuthContext)
+    
     const handleSignOut=()=>{
        signOut(auth)
        .then(res=>{
          setUser(null)
+        
          toast.success('Signed Out')
        })
        .catch(e=>{
